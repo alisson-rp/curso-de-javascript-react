@@ -2,6 +2,10 @@
 // Higher-order function 
 
 // criar de forma literal
-function fun1() {
-    
-}
+function fun1() {}
+
+// armazenar em uma variavel 
+const fun2 = function () {} // função anonima atribuida a uma variavel 
+
+// Armazenar em um array 
+const array = [function (a,b) {return a + b}, fun1, fun2]
