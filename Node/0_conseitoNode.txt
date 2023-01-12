@@ -1,0 +1,4 @@
+ Node é o ambiente de execução de JavaScript do lado do servidor.
+ Apache é basiado em tred
+
+ dentro do Node um arquivo representa um modulo
