@@ -5,7 +5,7 @@ function gerarNumerosEntre(min, max, numProibidos) {
         const fator = max - min + 1
         const aleatorio = parseInt(Math.random() * fator) + min 
         if(numProibidos.includes(aleatorio)) {
-            reject('Numero repitido')
+            reject('Numero repetido')
         } else {
             resolve(aleatorio)
         }
@@ -20,7 +20,7 @@ async function gerarMegaSena(qtdeNumeros, tentativas = 1) {
             numeros.push(gerarNumerosEntre(1, 60, numeros ))
         }
         return numeros
-    } catch {
+    } catch(e) {
         if(trntativas > 100) {
             throw 'Não deu certo!'
         } else {
